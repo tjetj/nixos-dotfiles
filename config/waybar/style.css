@@ -1,0 +1,96 @@
+@define-color bg #282828;
+@define-color fg #ebdbb2;
+
+@define-color black #3c3836;
+@define-color red #cc241d;
+@define-color green #98971a;
+@define-color yellow #d79921;
+@define-color blue #458588;
+@define-color purple #b16286;
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background: @bg;
+    color: @fg;
+}
+
+#workspaces,
+#window,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    background: transparent;
+    color: @fg;
+    padding: 0 8px;
+    margin: 0;
+}
+
+#workspaces button {
+    color: @fg;
+    padding: 0 6px;
+    margin: 0;
+    background: transparent;
+}
+
+#workspaces button.active {
+    background: @blue;
+    color: @bg;
+}
+
+#workspaces button.focused {
+    background: @blue;
+    color: @bg;
+}
+
+#workspaces button.urgent {
+    background: @red;
+    color: @bg;
+}
+
+#workspaces button:hover {
+    background: @black;
+    box-shadow: none;
+}
+
+#window {
+    background: @color4;
+    color: @background;
+    padding: 0 20px;
+    margin: 3px 0;
+    font-weight: bold;
+}
+
+#clock {
+    color: @green;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+#network {
+    color: @blue;
+}
+
+#cpu {
+    color: @purple;
+}
+
+#memory {
+    color: @fg;
+}
+
+#tray {
+    padding-left: 6px;
+}
