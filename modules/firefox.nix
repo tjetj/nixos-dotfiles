@@ -114,6 +114,9 @@
       };
 
       userChrome = ''
+        * {
+	  border-radius: 0 !important;
+	}
       '';
 
       bookmarks = {
