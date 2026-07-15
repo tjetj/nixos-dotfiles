@@ -27,6 +27,7 @@
         don-t-fuck-with-paste
         violentmonkey
         wayback-machine
+	gruvbox-dark-theme
       ];
 
       settings = {
