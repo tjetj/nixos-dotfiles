@@ -6,15 +6,12 @@
       ./hardware-configuration.nix
     ];
 
-  boot.loader.limine.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.limine.enable = true; boot.loader.efi.canTouchEfiVariables = true;
 
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModulePackages = with config.boot.kernelPackages; [
     v4l2loopback
   ];
-
-  services.getty.autologinUser = "tjetj";
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -25,7 +22,7 @@
 
   programs.hyprland = {
     enable = true;
-#    withUWSM = true;
+    withUWSM = true;
     xwayland.enable = true;
   };
 
