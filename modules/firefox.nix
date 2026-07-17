@@ -28,6 +28,7 @@
         violentmonkey
         wayback-machine
 	gruvbox-dark-theme
+	untrap-for-youtube
       ];
 
       settings = {
