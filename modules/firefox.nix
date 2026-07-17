@@ -28,7 +28,6 @@
         violentmonkey
         wayback-machine
 	gruvbox-dark-theme
-	youtube-shorts-block
       ];
 
       settings = {
