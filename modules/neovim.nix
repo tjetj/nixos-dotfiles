@@ -32,10 +32,6 @@
       -- Theme
       vim.o.termguicolors = true
       vim.cmd.colorscheme("gruvbox")
-      vim.opt.cursorline = true
-
-      -- Shift width
-      vim.opt.shiftwidth = 4
 
       -- Keybindings
       local builtin = require("telescope.builtin")
@@ -46,10 +42,10 @@
       vim.keymap.set("n", "<leader>fg", builtin.live_grep)
       vim.keymap.set("n", "<leader>fb", builtin.buffers)
       vim.keymap.set("n", "<leader>fh", builtin.help_tags)
-
+      
       -- Numbers
-      vim.opt.number = true
-      vim.opt.relativenumber = true
+      vim.o.number = true
+      vim.o.relativenumber = true
     '';
   };
 }
