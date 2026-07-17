@@ -28,7 +28,7 @@
         violentmonkey
         wayback-machine
 	gruvbox-dark-theme
-	untrap-for-youtube
+	youtube-shorts-block
       ];
 
       settings = {
