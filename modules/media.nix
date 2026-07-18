@@ -6,6 +6,7 @@
     kdePackages.kdenlive
     ffmpeg
     yt-dlp
+    easyeffects
   ];
 
   programs.obs-studio = {
