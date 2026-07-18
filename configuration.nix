@@ -45,7 +45,7 @@
     wireplumber.enable = true;
   };
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
 
   environment.systemPackages = with pkgs; [
     neovim
@@ -55,6 +55,8 @@
     git
     alsa-utils
     home-manager
+    tofi
+    gcc
 
     # encryption
     gnupg

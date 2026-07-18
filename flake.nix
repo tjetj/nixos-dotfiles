@@ -10,9 +10,14 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nur, home-manager, ... }:
+  outputs = { self, nixpkgs, nur, home-manager, nixvim, ... }:
   let
     system = "x86_64-linux";
 
@@ -29,6 +34,7 @@
 
       modules = [
         ./configuration.nix
+
         home-manager.nixosModules.home-manager
 
         {
@@ -41,7 +47,12 @@
             useUserPackages = true;
             backupFileExtension = "backup";
 
-            users.tjetj = import ./home.nix;
+            users.tjetj = {
+              imports = [
+                nixvim.homeModules.nixvim
+                ./home.nix
+              ];
+            };
           };
         }
       ];
@@ -51,6 +62,7 @@
       inherit pkgs;
 
       modules = [
+        nixvim.homeModules.nixvim
         ./home.nix
       ];
     };

@@ -2,12 +2,12 @@
 
 {
   imports = [
-    ./modules/neovim.nix
     ./modules/firefox.nix
     ./modules/gaming.nix
     ./modules/hypr.nix
     ./modules/video.nix
     ./modules/rice.nix
+    ./modules/nixvim.nix
   ];
 
   programs.git = {
@@ -23,6 +23,10 @@
         defaultBranch = "main";
       };
     };
+  };
+
+  home.sessionVariables = {
+    MANPAGER = "nvim +Man!";
   };
 
   home.pointerCursor = {

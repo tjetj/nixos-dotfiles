@@ -9,7 +9,7 @@ hl.monitor({
 
 local terminal    = "kitty"
 local fileManager = "pcmanfm"
-local menu        = "hyprlauncher"
+local menu        = "tofi-run"
 
  hl.on("hyprland.start", function () 
    hl.exec_cmd(terminal)
