@@ -35,6 +35,8 @@
     ];
   };
 
+  environment.variables.EDITOR = "nvim";
+
   security.rtkit.enable = true;
 
   services.pipewire = {

@@ -17,6 +17,7 @@
         enable = true;
         servers = {
           clangd.enable = true;
+          basedpyright.enable = true;
         };
       };
 
@@ -45,6 +46,11 @@
       bear
       ripgrep
       fd
+
+      python3
+      pyright
+      ruff
+      black
     ];
 
     opts = {
