@@ -8,6 +8,7 @@
     ./modules/media.nix
     ./modules/rice.nix
     ./modules/nixvim.nix
+    ./modules/developer.nix
   ];
 
   programs.git = {
