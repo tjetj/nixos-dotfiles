@@ -5,7 +5,7 @@
     ./modules/firefox.nix
     ./modules/gaming.nix
     ./modules/hypr.nix
-    ./modules/video.nix
+    ./modules/media.nix
     ./modules/rice.nix
     ./modules/nixvim.nix
   ];
