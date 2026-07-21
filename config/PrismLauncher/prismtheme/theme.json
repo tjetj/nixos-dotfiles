@@ -1,0 +1,22 @@
+{
+    "colors": {
+        "AlternateBase": "#161204",
+        "Base": "#10061c",
+        "BrightText": "#fb6595",
+        "Button": "#161204",
+        "ButtonText": "#cee3de",
+        "Highlight": "#10c18c",
+        "HighlightedText": "#eae1e8",
+        "Link": "#25ade8",
+        "Text": "#dbfefc",
+        "ToolTipBase": "#161204",
+        "ToolTipText": "#cee3de",
+        "Window": "#10061c",
+        "WindowText": "#dbfefc",
+        "fadeAmount": 0.5,
+        "fadeColor": "#77776d"
+    },
+    "name": "Theme",
+    "qssFilePath": "themeStyle.css",
+    "widgets": "Fusion"
+}

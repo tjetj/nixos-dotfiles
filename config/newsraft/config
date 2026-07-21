@@ -1,0 +1,1 @@
+bind m exec setsid mpv --terminal=no "%l" &

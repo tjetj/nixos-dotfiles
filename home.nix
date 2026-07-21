@@ -2,9 +2,8 @@
 
 {
   imports = [
-    ./modules/firefox.nix
+    ./modules/firefox/firefox.nix
     ./modules/gaming.nix
-    ./modules/hypr.nix
     ./modules/media.nix
     ./modules/rice.nix
     ./modules/nixvim.nix
@@ -47,19 +46,20 @@
     enable = true;
     initExtra = ''
       export PS1='\[\e[30;104m\][\w]\[\e[0m\] \[\e[30;42m\][\\$]\[\e[0m\] '
+      clear
       pfetch
     '';
     shellAliases = {
     };
-    profileExtra = ''
-      if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-        exec uwsm start -S hyprland-uwsm.desktop
-      fi
-    '';
+        #profileExtra = ''
+        #  if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+        #    exec startx
+        #  fi
+        #'';
   };
-  home.file.".config/hypr".source = ./config/hypr;
-  home.file.".config/waybar".source = ./config/waybar;
-  home.file.".config/kitty".source = ./config/kitty;
+    #  home.file.".config/xinitrc".source = ./;
   home.file.".local/share/PrismLauncher/themes".source =
   ./config/PrismLauncher;
+  home.file.".Xdefaults".source = ./config/Xdefaults;
+  home.file.".config/newsraft/config".source = ./config/newsraft/config;
 }

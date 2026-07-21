@@ -21,10 +21,17 @@
 
   services.displayManager.ly.enable = true;
 
-  programs.hyprland = {
+  services.xserver.windowManager.dwm = {
     enable = true;
-    withUWSM = true;
-    xwayland.enable = true;
+    package = pkgs.dwm.overrideAttrs {
+      src = ./config/dwm;
+    };
+  };
+
+  services.xserver = {
+    enable = true;
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 35;
   };
 
   users.users.tjetj = {
@@ -32,6 +39,7 @@
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
+      newsraft
     ];
   };
 
@@ -57,11 +65,21 @@
     git
     alsa-utils
     home-manager
-    tofi
     gcc
-
-    # encryption
+  
     gnupg
+
+    rxvt-unicode
+    xorg.xinit
+    xorg.xrandr
+    feh          # wallpaper
+    picom        # compositor
+    dmenu        # launcher
+    xclip
+  ];
+
+  fonts.packages = with pkgs; [
+    tamzen
   ];
 
   programs.gnupg.agent = {

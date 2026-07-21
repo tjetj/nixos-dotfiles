@@ -1,4 +1,3 @@
-# modules/home-manager/browsers.nix
 { pkgs, ... }:
 
 {
@@ -22,12 +21,12 @@
 
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
-	decentraleyes
+    	decentraleyes
         vimium-c
         don-t-fuck-with-paste
         violentmonkey
         wayback-machine
-	gruvbox-dark-theme
+        awesome-rss
       ];
 
       settings = {
@@ -115,8 +114,9 @@
 
       userChrome = ''
         * {
-	  border-radius: 0 !important;
-	}
+        border-radius: 0 !important;
+        font-family: Tamzen, monospace !important;
+      }
       '';
 
       bookmarks = {

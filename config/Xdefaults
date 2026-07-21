@@ -1,0 +1,23 @@
+URxvt.font: xft:Tamzen:size=16
+URxvt.scrollBar: false
+
+*.foreground: #dbfefc
+*.background: #10061c
+*.cursorColor: #a2a794
+
+*.color0: #161204
+*.color1: #fb6595
+*.color2: #10c18c
+*.color3: #90bd05
+*.color4: #25ade8
+*.color5: #b386fe
+*.color6: #10ade0
+*.color7: #cee3de
+*.color8: #77776d
+*.color9: #d19670
+*.color10: #10cd0a
+*.color11: #aebf0e
+*.color12: #5db0fa
+*.color13: #c092ec
+*.color14: #22b9cc
+*.color15: #eae1e8
