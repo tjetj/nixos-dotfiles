@@ -115,7 +115,7 @@
       userChrome = ''
         * {
         border-radius: 0 !important;
-        font-family: Tamzen, monospace !important;
+        font-family: Departure Mono, monospace !important;
       }
       '';
 
