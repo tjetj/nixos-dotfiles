@@ -1,0 +1,14 @@
+# Vim
+*.swp
+
+# direnv
+.direnv/
+.envrc
+
+# Nix build outputs
+result
+result-*
+
+# Secrets
+*.age
+secrets/

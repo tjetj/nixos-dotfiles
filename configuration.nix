@@ -40,6 +40,7 @@
     packages = with pkgs; [
       tree
       newsraft
+      amfora
     ];
   };
 
@@ -80,6 +81,7 @@
 
   fonts.packages = with pkgs; [
     tamzen
+    departure-mono
   ];
 
   programs.gnupg.agent = {
