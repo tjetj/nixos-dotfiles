@@ -9,8 +9,7 @@
     ./modules/nixvim.nix
     ./modules/developer.nix
   ];
-
-  programs.git = {
+programs.git = {
     enable = true;
   
     settings = {
@@ -35,8 +34,6 @@
     name = "Adwaita";
     size = 24;
   
-    gtk.enable = true;
-    x11.enable = true;
   };
 
   home.username = "tjetj";
@@ -62,4 +59,5 @@
   ./config/PrismLauncher;
   home.file.".Xdefaults".source = ./config/Xdefaults;
   home.file.".config/newsraft/config".source = ./config/newsraft/config;
+  home.file.".config/picom.conf".source = ./config/picom.conf;
 }

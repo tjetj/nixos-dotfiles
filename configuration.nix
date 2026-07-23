@@ -41,6 +41,7 @@
       tree
       newsraft
       amfora
+      ollama
     ];
   };
 
@@ -77,6 +78,8 @@
     picom        # compositor
     dmenu        # launcher
     xclip
+    maim
+    slop
   ];
 
   fonts.packages = with pkgs; [
