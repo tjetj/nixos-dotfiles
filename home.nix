@@ -60,4 +60,8 @@ programs.git = {
   home.file.".Xdefaults".source = ./config/Xdefaults;
   home.file.".config/newsraft/config".source = ./config/newsraft/config;
   home.file.".config/picom.conf".source = ./config/picom.conf;
+  home.file.".dwm/autostart.sh" = {
+    source = ./config/autostart.sh;
+    executable = true;
+  };
 }
