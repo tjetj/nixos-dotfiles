@@ -79,7 +79,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
     { MODKEY,                       XK_Print,  spawn,          SHCMD("maim ~/screenshots/$(date +%s).png") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("maim -s ~/screenshots/$(date +%s).png") },
-	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_j,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
