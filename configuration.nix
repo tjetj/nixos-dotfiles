@@ -42,6 +42,7 @@
       newsraft
       amfora
       ollama
+      xdotool
     ];
   };
 
