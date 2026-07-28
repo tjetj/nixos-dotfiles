@@ -43,6 +43,7 @@
       amfora
       ollama
       xdotool
+      slstatus
     ];
   };
 
