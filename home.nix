@@ -8,6 +8,7 @@
     ./modules/rice.nix
     ./modules/nixvim.nix
     ./modules/developer.nix
+    ./modules/productivity.nix
   ];
 programs.git = {
     enable = true;
