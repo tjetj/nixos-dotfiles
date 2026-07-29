@@ -70,6 +70,9 @@
     alsa-utils
     home-manager
     gcc
+
+    pkgs.man-pages
+    pkgs.man-pages-posix
   
     gnupg
 
@@ -84,8 +87,9 @@
     slop
   ];
 
+  documentation.dev.enable = true;
+
   fonts.packages = with pkgs; [
-    tamzen
     departure-mono
   ];
 
