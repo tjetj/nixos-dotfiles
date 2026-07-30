@@ -28,12 +28,6 @@
     };
   };
 
-  environment.systemPackages = [
-    (pkgs.dmenu.overrideAttrs {
-      src = ./config/dmenu;
-    })
-  ];
-
   services.xserver = {
     enable = true;
     autoRepeatDelay = 200;
@@ -68,6 +62,10 @@
   services.pulseaudio.enable = false;
 
   environment.systemPackages = with pkgs; [
+    (dmenu.overrideAttrs {
+      src = ./config/dmenu;
+    })
+  
     neovim
     wget
     nerd-fonts.jetbrains-mono
@@ -76,18 +74,14 @@
     alsa-utils
     home-manager
     gcc
-
-    pkgs.man-pages
-    pkgs.man-pages-posix
   
     gnupg
-
+  
     rxvt-unicode
     xorg.xinit
     xorg.xrandr
-    feh          # wallpaper
-    picom        # compositor
-    dmenu        # launcher
+    feh
+    picom
     xclip
     maim
     slop
