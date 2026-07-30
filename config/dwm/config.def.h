@@ -15,8 +15,7 @@ static const char col_gray4[]       = "#ffffff";
 static const char col_cyan[]        = "#b386fe";
 
 static const char *colors[][3]      = {
-	/*               fg          bg          border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	/*               fg          bg          border   */ [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
@@ -68,6 +67,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD("ffplay ~/Music/\"$(ls ~/Music | dmenu)\"") },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },

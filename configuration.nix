@@ -28,6 +28,12 @@
     };
   };
 
+  environment.systemPackages = [
+    (pkgs.dmenu.overrideAttrs {
+      src = ./config/dmenu;
+    })
+  ];
+
   services.xserver = {
     enable = true;
     autoRepeatDelay = 200;
