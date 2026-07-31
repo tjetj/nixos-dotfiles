@@ -40,29 +40,28 @@ programs.git = {
   home.username = "tjetj";
   home.homeDirectory = "/home/tjetj";
   home.stateVersion = "26.05";
+
   programs.bash = {
     enable = true;
+    shellAliases = {
+      copy = "xclip -selection clipboard";
+    };
     initExtra = ''
       export PS1='\[\e[30;104m\][\w]\[\e[0m\] \[\e[30;42m\][\\$]\[\e[0m\] '
       clear
       pfetch
     '';
-    shellAliases = {
-    };
-        #profileExtra = ''
-        #  if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-        #    exec startx
-        #  fi
-        #'';
   };
+
     #  home.file.".config/xinitrc".source = ./;
   home.file.".local/share/PrismLauncher/themes".source =
   ./config/PrismLauncher;
   home.file.".Xdefaults".source = ./config/Xdefaults;
   home.file.".config/newsraft/config".source = ./config/newsraft/config;
   home.file.".config/picom.conf".source = ./config/picom.conf;
-  home.file.".dwm/autostart.sh" = {
-    source = ./config/autostart.sh;
+  home.file.".dwm" = {
+    source = ./config/scripts;
+    recursive = true;
     executable = true;
   };
 }
