@@ -2,6 +2,7 @@
 
 {
   programs.nixvim = {
+    globals.mapleader = " ";
     enable = true;
     plugins = {
       treesitter = {
@@ -31,6 +32,7 @@
           ];
         };
       };
+
 
       lsp = {
         enable = true;

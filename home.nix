@@ -6,7 +6,7 @@
     ./modules/gaming.nix
     ./modules/media.nix
     ./modules/rice.nix
-    ./modules/nixvim.nix
+    ./modules/nixvim/nixvim.nix
     ./modules/developer.nix
     ./modules/productivity.nix
   ];
