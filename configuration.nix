@@ -40,8 +40,6 @@
     packages = with pkgs; [
       tree
       newsraft
-      amfora
-      ollama
       xdotool
       slstatus
     ];
