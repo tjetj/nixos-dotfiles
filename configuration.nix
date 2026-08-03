@@ -42,6 +42,7 @@
       newsraft
       xdotool
       slstatus
+      aerc
     ];
   };
 
