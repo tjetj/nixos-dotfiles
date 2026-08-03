@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Departure Mono:size=12" };
-static const char dmenufont[]       = "Departure Mono:size=12";
+static const char *fonts[]          = { "Iosevka Nerd Font Mono:size=12" };
+static const char dmenufont[]       = "Iosevka Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#10061c";
 static const char col_gray2[]       = "#25ade8";
 static const char col_gray3[]       = "#dbfefc";

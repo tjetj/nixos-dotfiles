@@ -92,6 +92,7 @@
 
   fonts.packages = with pkgs; [
     departure-mono
+    nerd-fonts.iosevka
   ];
 
   programs.gnupg.agent = {
