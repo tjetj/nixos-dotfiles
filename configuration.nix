@@ -42,7 +42,6 @@
       newsraft
       xdotool
       slstatus
-      aerc
     ];
   };
 
@@ -75,6 +74,8 @@
     gcc
   
     gnupg
+    protonmail-bridge
+    aerc
   
     rxvt-unicode
     xorg.xinit
