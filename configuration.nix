@@ -76,6 +76,7 @@
     gnupg
     protonmail-bridge
     aerc
+    pass
   
     rxvt-unicode
     xorg.xinit
