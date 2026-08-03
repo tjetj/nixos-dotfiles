@@ -12,6 +12,8 @@
           indent.enable = true;
         };
       };
+      
+      neo-tree.enable = true;
 
       orgmode = {
         enable = true;

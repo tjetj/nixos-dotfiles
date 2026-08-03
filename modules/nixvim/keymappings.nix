@@ -17,8 +17,8 @@
 
       {
         mode = "n";
-        key = "<leader>cd";
-        action = "<cmd>Ex<CR>";
+        key = "<leader>e";
+        action = "<cmd>Neotree toggle<CR>";
       }
     ];
   };
